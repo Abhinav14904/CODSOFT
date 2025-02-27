@@ -9,13 +9,13 @@ public static void main(String[] args){
 	ArrayList<Integer> l=new ArrayList<Integer>(size);
 
 	for(int i=0;i<size;i++){
-		System.out.println("Enter marks of " +(i+1)+"st/nd subject:");
+		System.out.println("Enter Marks of " +(i+1)+"st/nd Subject:");
 		int marks=sc.nextInt();
 		if(marks<=100 && marks>=0){
 		l.add(marks);
 		}
 		else{
-		System.out.println("enter valid marks(0-100)");
+		System.out.println("Enter Valid Marks(0-100)");
 		i--;
 		}
 	}
@@ -24,13 +24,13 @@ public static void main(String[] args){
 	}
 	float avg= (float)sum/(l.size());
 
-	System.out.println("Total marks obtained"+sum);
+	System.out.println("Total Marks Obtained: "+sum);
 
-	System.out.println("Average marks obtained"+avg);
+	System.out.println("Average Marks Obtained: "+avg);
 
 	String grade=determinegrade(avg);
 
-	System.out.println(grade);
+	System.out.println("Grade: "+grade);
 
 
 
