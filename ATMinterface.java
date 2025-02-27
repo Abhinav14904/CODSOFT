@@ -4,7 +4,8 @@ public class ATMinterface{
 		private float balance=0.0f;
     public static void main(String[] args){
 		ATMinterface atm=new ATMinterface();
-	        atm.runatm();		  
+	        atm.runatm();
+	    	sc.close();
 	}
 
 public void runatm(){
